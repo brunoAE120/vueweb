@@ -24,4 +24,4 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Print
-![Screenshot](Print/web1.png)
+[Screenshot](Print/web1.png)
