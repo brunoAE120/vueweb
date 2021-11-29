@@ -25,3 +25,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Print
 [Screenshot](Print/web1.png)
+
+### Problemas apresentados
+- Não consigo fazer o print aparecer
+- Problemas com o GIT - finalizado os problemas às 22:29 (28/11)
+- Problema na construção do que foi pedido.
