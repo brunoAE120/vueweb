@@ -1,6 +1,11 @@
 <template>
   <v-app>
-    <v-toolbar dense>
+    <v-toolbar 
+    color="orange"
+    dense
+    elevation="4"
+    outlined
+    shaped>
     <v-overflow-btn
       :items="dropdown_font"
       label="Select font"
@@ -99,17 +104,50 @@
     </template>
   </v-toolbar>
 
-    <v-navigation-drawer>
-      v-model="drawer"
-      absolute
-      permanent
-    >
+    <v-navigation-drawer
+    v-model="drawer"
+      absolute>
       <v-list-item>
 
         <v-list-item-content>
           <v-list-item-title>Bruno Almeida</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
+
+       <v-btn-toggle
+        v-model="toggle_exclusive"
+        color="primary"
+        dense
+        group
+      >
+        <v-btn
+          :value="1"
+          text
+        >
+          <v-icon>mdi-format-align-left</v-icon>
+        </v-btn>
+
+        <v-btn
+          :value="2"
+          text
+        >
+          <v-icon>mdi-format-align-center</v-icon>
+        </v-btn>
+
+        <v-btn
+          :value="3"
+          text
+        >
+          <v-icon>mdi-format-align-right</v-icon>
+        </v-btn>
+
+        <v-btn
+          :value="4"
+          text
+        >
+          <v-icon>mdi-format-align-justify</v-icon>
+        </v-btn>
+      </v-btn-toggle>
 
       <v-divider></v-divider>
 
@@ -131,9 +169,6 @@
   </v-navigation-drawer>
 
     <v-app-bar
-      app
-      color="red"
-      dark
     >
       
       <v-spacer></v-spacer>
